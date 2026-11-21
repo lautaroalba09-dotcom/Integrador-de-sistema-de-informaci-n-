@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Préstamo de Biblioteca</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.webmanifest">
+</head>
+<body>
+
+  <header>
+    <h1>Biblioteca Escolar</h1>
+  </header>
+
+  <main>
+    <form>
+      <fieldset>
+        <legend>Identificación del solicitante</legend>
+
+        <label for="nombre">Nombre y apellido:</label>
+        <input type="text" id="nombre" name="nombre" required aria-describedby="ayuda-nombre">
+        <span id="ayuda-nombre">Escribí tu nombre completo.</span>
+
+        <label for="tel">Teléfono:</label>
+        <input type="tel" id="tel" name="tel" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Datos del préstamo</legend>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required>
+
+        <br><br>
+        <input type="checkbox" id="equipo" name="equipo">
+        <label for="equipo">Llevo netbook</label>
+        <br><br>
+
+        <label for="comentario">Libro o detalles:</label>
+        <textarea id="comentario" name="comentario" rows="2"></textarea>
+      </fieldset>
+
+      <button type="submit">Enviar pedido</button>
+    </form>
+  </main>
+
+</body>
+</html>
